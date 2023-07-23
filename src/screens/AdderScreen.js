@@ -1,5 +1,6 @@
 import React from 'react';
 import type {Node} from 'react';
+import MovieAPI from '../comps/MovieAPI';
 
 import {
   SafeAreaView,
@@ -29,11 +30,8 @@ function AdderScreen ({navigation}) {
         </View>
         <View style={styles.form}>
           <TextInput placeholder="Title" />
-          <Dropdown
-            label='Genre'
-            data={data}
-          />
         </View>
+        <MovieAPI />
 
         <Button
           onPress={() => navigation.navigate('Home')}

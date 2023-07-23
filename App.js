@@ -14,6 +14,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './src/screens/HomeScreen';
 import AdderScreen from './src/screens/AdderScreen';
 import PickerScreen from './src/screens/PickerScreen';
+import MovieAPI from './src/comps/MovieAPI';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Adder" component={AdderScreen} />
         <Stack.Screen name="Picker" component={PickerScreen} />
+        <Stack.Screen name="MovieAPI" component={MovieAPI} />
       </Stack.Navigator>
     </NavigationContainer>
   );
