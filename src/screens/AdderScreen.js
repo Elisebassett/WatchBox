@@ -28,9 +28,6 @@ function AdderScreen ({navigation}) {
         <View style={styles.header}>
           <Text style={styles.headerText}>Add A Watch</Text>
         </View>
-        <View style={styles.form}>
-          <TextInput placeholder="Title" />
-        </View>
         <MovieAPI />
 
         <Button

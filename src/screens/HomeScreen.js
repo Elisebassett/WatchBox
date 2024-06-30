@@ -19,7 +19,7 @@ function HomeScreen({navigation}) {
       <SafeAreaView style={styles.container}>
         <View style={styles.centerButton}>
           <TouchableOpacity onPress={() => { alert('YOU DID IT!'); }}>
-            <Image style={styles.img} source={require('../../imgs/WatchBox.png')} />
+            <Image style={styles.img} source={ require('../../imgs/WatchBox.png') } />
           </TouchableOpacity>
         </View>
         <TouchableOpacity style={styles.containerTop} onPress={() => navigation.navigate('Picker')}>
